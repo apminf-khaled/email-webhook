@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: email-webhook
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: GMAIL_USER
+        sync: false
+      - key: GMAIL_APP_PASS
+        sync: false
